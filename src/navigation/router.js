@@ -24,7 +24,7 @@ class StackRouter extends Component {
 
     render() {
         return (
-            <this.Stack.Navigator initialRouteName='Cadastro'>
+            <this.Stack.Navigator initialRouteName='Login'>
                 <this.Stack.Screen
                     name='Login'
                     component={LoginPg}

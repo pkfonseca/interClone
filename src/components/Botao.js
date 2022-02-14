@@ -7,12 +7,15 @@ export default class Botao extends Component {
     render() {
         return (
             <TouchableOpacity
-            style={{paddingVertical:10, borderRadius:10, alignItems:'center', backgroundColor:this.constante.cor.principal,...this.props.style}}>
+                onPress={this.props.onPress}
+                activeOpacity={this.props.activeOpacity}
+                style={{ paddingVertical: 10, borderRadius: 10, alignItems: 'center', backgroundColor: this.constante.cor.principal, ...this.props.style }}>
                 <Text
-                    style={{...this.constante.fonts.texto.negrito.medio, color:'white'}}
+                    style={{ ...this.constante.fonts.texto.negrito.medio, color: this.props.color, }}
                 >
                     {this.props.titulo}
                 </Text>
+                {this.props.icone && this.props.icone}
             </TouchableOpacity>
         );
     }

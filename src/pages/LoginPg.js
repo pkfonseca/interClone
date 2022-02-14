@@ -25,12 +25,12 @@ export default class LoginPg extends Component {
                             <Header
                                 titulo='Contas' />
 
-                            <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", borderRadius: 10, borderWidth: 1, padding: 10, justifyContent: 'space-between', borderColor: this.constante.cor.principal, marginTop:'auto' }}>
+                            <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", borderRadius: 10, borderWidth: 1, padding: 10, justifyContent: 'space-between', borderColor: this.constante.cor.principal, marginTop: 'auto' }}>
                                 <Text style={{ ...this.constante.fonts.texto.negrito.pequeno, color: this.constante.cor.principal }}>Entrar com outra conta</Text>
                                 <AntDesign size={25} name='arrowright' color={this.constante.cor.principal} />
                             </TouchableOpacity>
 
-                            <TouchableOpacity onPress={()=>this.props.navigation.navigate('Cadastro')} style={{ flexDirection: "row", alignItems: "center", borderRadius: 10, padding: 10, justifyContent: 'space-between', backgroundColor: this.constante.cor.principal, marginTop: 10 }}>
+                            <TouchableOpacity onPress={() => this.props.navigation.navigate('Cadastro')} style={{ flexDirection: "row", alignItems: "center", borderRadius: 10, padding: 10, justifyContent: 'space-between', backgroundColor: this.constante.cor.principal, marginTop: 10 }}>
                                 <Text style={{ ...this.constante.fonts.texto.negrito.pequeno, color: this.constante.cor.secundaria }}>Abrir conta completa e gratuita</Text>
                                 <AntDesign size={25} name='arrowright' color={this.constante.cor.secundaria} />
                             </TouchableOpacity>
@@ -65,14 +65,14 @@ export default class LoginPg extends Component {
                                 </TouchableOpacity>
                             } />
 
-                        <Botao titulo='Entrar' style={{ marginTop: 20 }} />
+                        <Botao titulo='Entrar' style={{ marginTop: 20,}} color={'white'} />
 
 
                         <TouchableOpacity style={{ width: '100%', alignItems: "center", marginTop: 20 }}>
                             <Text style={{ ...this.constante.fonts.texto.normal.pequeno, color: this.constante.cor.principal }}>Esqueci minha senha</Text>
                         </TouchableOpacity>
 
-                        <View style={{ flexDirection: "row", alignItems: "center", width: '100%', justifyContent: 'space-between', height: 'auto', marginTop: '20%' }}>
+                        <View style={{ flexDirection: "row", alignItems: "center", width: '100%', justifyContent: 'space-between', height: 'auto', marginTop: '23%' }}>
                             <TouchableOpacity style={{ flexDirection: 'row', alignItems: 'center' }}>
                                 <MaterialCommunityIcons name='shield-lock-outline' size={20} color={this.constante.cor.principal} />
                                 <Text style={{ ...this.constante.fonts.texto.normal.pequeno, color: this.constante.cor.principal }}>iSafe</Text>
@@ -81,6 +81,7 @@ export default class LoginPg extends Component {
                                 <Text style={{ ...this.constante.fonts.texto.normal.pequeno, color: this.constante.cor.principal }}>Trocar ou abrir conta</Text>
                             </TouchableOpacity>
                         </View>
+
                     </View>
                 </ScrollView>
             </KeyboardAvoidingView>

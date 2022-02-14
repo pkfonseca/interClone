@@ -9,7 +9,9 @@ export default class Header extends Component {
         return (
             <View style={{width:'100%', height:'auto',flexDirection:'row', justifyContent:'space-between'}}>
 
-                <TouchableOpacity style={{width:50, height:50, borderRadius:500}}>
+                <TouchableOpacity 
+                onPress={this.props.onPress}
+                style={{width:50, height:50, borderRadius:500}}>
                 <AntDesign name='arrowleft' size={25} color={this.constante.cor.principal}/>
                 </TouchableOpacity>
 
