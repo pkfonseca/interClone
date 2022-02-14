@@ -22,7 +22,6 @@ export default class CadastroPg extends Component {
                 <Modal
                     visible={this.state.modalVisivel}
                 >
-
                     <View style={{ flex: 1, height: 'auto', padding: 20 }}>
                         <Header
                             onPress={() => this.setState({ modalVisivel: !this.state.modalVisivel })}
@@ -88,7 +87,7 @@ export default class CadastroPg extends Component {
                             <Botao
                                 titulo='Continuar'
                                 color='white'
-                                onPress={() => this.setState({ modalVisivel: !this.state.modalVisivel })}
+                                onPress={() => this.props.navigation.replace('Principal')}
                             />
                             :
                             <Botao

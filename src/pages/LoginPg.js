@@ -23,6 +23,7 @@ export default class LoginPg extends Component {
                         visible={this.state.modalVisivel}>
                         <View style={{ flex: 1, height: 'auto', padding: 20 }}>
                             <Header
+                                onPress={()=>this.setState({modalVisivel: !this.state.modalVisivel})}
                                 titulo='Contas' />
 
                             <TouchableOpacity style={{ flexDirection: "row", alignItems: "center", borderRadius: 10, borderWidth: 1, padding: 10, justifyContent: 'space-between', borderColor: this.constante.cor.principal, marginTop: 'auto' }}>

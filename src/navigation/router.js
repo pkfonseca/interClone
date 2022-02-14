@@ -4,6 +4,7 @@ import LoginPg from '../pages/LoginPg';
 import { createStackNavigator } from '@react-navigation/stack';
 import Constante from '../util/Constante';
 import CadastroPg from '../pages/CadastroPg';
+import PrincipalPg from '../pages/Principal';
 
 export default class Router extends Component {
 
@@ -24,7 +25,7 @@ class StackRouter extends Component {
 
     render() {
         return (
-            <this.Stack.Navigator initialRouteName='Login'>
+            <this.Stack.Navigator initialRouteName='Principal'>
                 <this.Stack.Screen
                     name='Login'
                     component={LoginPg}
@@ -33,6 +34,11 @@ class StackRouter extends Component {
                     name='Cadastro'
                     component={CadastroPg}
                     options={{ headerShown: false }} />
+                    <this.Stack.Screen
+                    name='Principal'
+                    component={PrincipalPg}
+                    options={{ headerShown: false }} />
+                    
             </this.Stack.Navigator>
         )
     }

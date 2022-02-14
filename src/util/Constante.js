@@ -23,7 +23,7 @@ export default class Constante {
 
             negrito: {
                 pequeno: {
-                    fontSize: 18,
+                    fontSize: 14,
                     fontWeight: 'bold'
                 },
 
@@ -33,7 +33,7 @@ export default class Constante {
                 },
 
                 medio: {
-                    fontSize: 20,
+                    fontSize: 15,
                     fontWeight: 'bold'
                 },
             },
